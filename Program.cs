@@ -8,8 +8,9 @@ namespace ConsoleAppXmlExamples
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("Hello, World!");
+            string salute = "Hello World";
+            XElement newSalute = new XElement("Salute", salute);
+            Console.WriteLine(newSalute);
         }
     }
 }
